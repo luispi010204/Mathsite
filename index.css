@@ -1,0 +1,66 @@
+html {
+    zoom: 100%;
+}
+
+body {
+    height: 100vh;
+    background-color: lightblue;
+    text-align: center;
+    font-size: 2em;
+
+}
+.text{
+    position: relative;
+    text-align: justify;
+    left: calc(50% - 30%);
+    font-size: 1em;
+    background-color: white;
+    max-width: fit-content;
+    width: 60%;
+    padding: 10px;
+
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+label{
+    font-size: 1.4em;
+}
+
+nav ul {
+    padding-left: 0;
+    display: flex;
+}
+
+.navigation li {
+    list-style-type:none;
+    margin-right: 1px;
+}
+
+nav li a:link {
+
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    background:#6C6;
+    width:6em;
+    padding: 0.2em;
+}
+
+
+
+footer {
+    position: relative;
+    top: 10vh;
+}
+
