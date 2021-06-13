@@ -21,6 +21,14 @@ body {
 
 }
 
+.variable{
+    display: inline-block;
+    width: 210px;
+    padding: 5px;
+    font-size: large;
+}
+
+
 h1 {
     color: black;
     text-align: center;

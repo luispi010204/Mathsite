@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
@@ -9,6 +9,19 @@
 
 <h1>Satz des Pythagoras</h1>
 
+<label for="text1" class="untertitel">Was ist der Satz des Pythagoras?</label>
+
+<p>
+<section id="text1" class="text">
+
+    Der Satz des Pythagoras wird angewendet, um die Seiten eines rechtwinklichen Dreiecks zu berechnen.
+    Das rechtwinklige Dreieck besitzt 2 Kateten diese heissen in diesem Fall (Katete a, Katete b)
+    und eine Hypotenuse. Die Hypotenuse ist die längste der 3 Seiten.
+</section>
+</p>
+
+<br>
+
 <p>
     <label> Beispeil der Formel:</label>
 
@@ -16,18 +29,18 @@
 <p><img src="bilder/satz-des-pythagoras-beispiel-1.jpg"></p>
 
 
-
+<br>
 
 
 <label>geben sie die Variablen ein:</label>
+<p>(geben sie 2 der 3 Variablen ein)</p>
 
-<p>
 
 <p>
     <label>
 
-        a =
-        <input type="text" name="a">
+        Katete a =
+        <input class="variable" type="text" id="a">
 
     </label>
 </p>
@@ -35,24 +48,51 @@
 
 <p>
     <label>
-        b =
-        <input type="text" name="b">
+        Katete b =
+        <input class="variable" type="text" id="b">
     </label>
 </p>
 
 
 <p>
     <label>
-        c =
-        <input type="text" name="c">
+        Hypotenuse =
+        <input class="variable" type="text" id="c">
 
     </label>
 </p>
 
+
+
+<button type="button" onclick="pythagoras()">berechne den fehlenden Wert</button>
+
+</p>
+
+<p >Die fehlende Seite beträgt: <span id="output"></span></p>
+
+
+<script src="pythagoras.js"></script>
+
+<br>
+<br>
+<br>
+
+<label for="text2" class="untertitel">Was wird gerechnet?</label>
+
+<p>
+<section id="text2" class="text">
+
+    Wenn eines der 3 Felder leer gelassen wird, werden die 2 anderen Werte benutzt um das dritte auszurechnen.
+    Das funktioniert so, indem beschaut wird ob eine Katete fehlt oder die Hypotenuse. Bei der Hypothenuse ist es etwas einfacher
+    da dort addiert werden kann. Wurzel(Katete a^2 + Katete b^2) = Hypotenuse.
+    Wenn aber jedoch eines der Kateten gesucht ist, wird die vorhandene Katete von der Hypotenuse subtrahiert.
+    Wurzel(Hypotenuse^2 - bestehende Katete^2) = gesuchte Katete
+</section>
 </p>
 
 
-
+<br>
+<br>
 
 
 </body>
