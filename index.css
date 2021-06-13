@@ -32,12 +32,23 @@ p {
 }
 
 label{
-    font-size: 1.4em;
+    font-size: 1.2em;
+}
+
+.navigation{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 nav ul {
-    padding-left: 0;
-    display: flex;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background:#43b6f0;
+    width: fit-content;
+
 }
 
 .navigation li {
@@ -45,16 +56,17 @@ nav ul {
     margin-right: 1px;
 }
 
-nav li a:link {
+nav li a{
 
-    display: flex;
-    flex-direction: column;
     text-decoration: none;
     font-weight: bold;
     display: block;
-    background:#6C6;
-    width:6em;
     padding: 0.2em;
+}
+
+li a:hover {
+    background-color: #555;
+    color: lightgray;
 }
 
 
