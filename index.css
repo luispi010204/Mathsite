@@ -64,17 +64,18 @@ nav ul {
     margin-right: 1px;
 }
 
-nav li a{
-
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    padding: 0.2em;
-}
 
 li a:hover {
     background-color: #555;
     color: lightgray;
+}
+
+nav li a:visited,  a:link{
+    color: #0000ee;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 0.2em;
 }
 
 
@@ -82,5 +83,6 @@ li a:hover {
 footer {
     position: relative;
     top: 10vh;
+    color: #0000ee;
 }
 
