@@ -39,6 +39,10 @@ p {
     font-size: 20px;
 }
 
+.resultButton {
+   font-size: 0.75em;
+}
+
 label{
     font-size: 1.2em;
 }
