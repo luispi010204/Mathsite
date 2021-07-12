@@ -40,7 +40,7 @@
     <label>
 
         Katete a =
-        <input class="variable" type="text" id="a">
+        <input class="variable" type="number" id="a">
 
     </label>
 </p>
@@ -49,7 +49,7 @@
 <p>
     <label>
         Katete b =
-        <input class="variable" type="text" id="b">
+        <input class="variable" type="number" id="b">
     </label>
 </p>
 
@@ -57,18 +57,17 @@
 <p>
     <label>
         Hypotenuse =
-        <input class="variable" type="text" id="c">
+        <input class="variable" type="number" id="c">
 
     </label>
 </p>
-
 
 
 <button class="resultButton" type="button" onclick="pythagoras()">berechne den fehlenden Wert</button>
 
 </p>
 
-<p >Die fehlende Seite beträgt: <span id="output"></span> </p>
+<p>Die fehlende Seite beträgt: <span id="output"></span></p>
 
 
 <script src="pythagoras.js"></script>
@@ -83,7 +82,8 @@
 <section id="text2" class="text">
 
     Wenn eines der 3 Felder leer gelassen wird, werden die 2 anderen Werte benutzt um das dritte auszurechnen.
-    Das funktioniert so, indem geschaut wird ob eine Katete fehlt oder die Hypotenuse. Bei der Hypothenuse ist es etwas einfacher,
+    Das funktioniert so, indem geschaut wird ob eine Katete fehlt oder die Hypotenuse. Bei der Hypothenuse ist es etwas
+    einfacher,
     da dort addiert werden kann. Wurzel(Katete a^2 + Katete b^2) = Hypotenuse.
     Wenn aber jedoch eines der Kateten gesucht ist, wird die vorhandene Katete von der Hypotenuse subtrahiert.
     Wurzel(Hypotenuse^2 - bestehende Katete^2) = gesuchte Katete
